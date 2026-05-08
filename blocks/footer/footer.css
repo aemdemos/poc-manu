@@ -1,14 +1,14 @@
 @import url('./footer-tokens.css');
 
 footer {
-  background-color: var(--light-color);
+  background-color: var(--brand-dark, rgb(40, 43, 62));
   font-size: var(--body-font-size-xs);
 }
 
 footer .footer > div {
   margin: auto;
-  max-width: var(--footer-max-width);
-  padding: var(--footer-padding);
+  max-width: 100%;
+  padding: 0;
 }
 
 footer .footer p {
@@ -17,6 +17,6 @@ footer .footer p {
 
 @media (width >= 900px) {
   footer .footer > div {
-    padding: var(--footer-padding-desktop);
+    padding: 0;
   }
 }
