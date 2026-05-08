@@ -29,7 +29,7 @@
 }
 
 /* Advice variant: 2x2 text-only card grid */
-.cards.\(advice\) > ul {
+.cards.advice > ul {
   grid-template-columns: 1fr;
   gap: 0;
   box-shadow: 0 8px 24px rgba(0 0 0 / 0.08), 0 0 4px rgba(0 0 0 / 0.04);
@@ -37,12 +37,12 @@
 }
 
 @media (width >= 900px) {
-  .cards.\(advice\) > ul {
+  .cards.advice > ul {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-.cards.\(advice\) > ul > li {
+.cards.advice > ul > li {
   border: none;
   padding: 48px;
   background-color: #fff;
@@ -50,28 +50,28 @@
 
 /* Border between columns (right column gets left border) */
 @media (width >= 900px) {
-  .cards.\(advice\) > ul > li:nth-child(2n) {
+  .cards.advice > ul > li:nth-child(2n) {
     border-left: 1px solid #ededed;
   }
 
   /* Border between rows (top 2 cards get bottom border) */
-  .cards.\(advice\) > ul > li:nth-child(-n+2) {
+  .cards.advice > ul > li:nth-child(-n+2) {
     border-bottom: 1px solid #ededed;
   }
 }
 
 /* On mobile, border between stacked items */
 @media (width < 900px) {
-  .cards.\(advice\) > ul > li:not(:last-child) {
+  .cards.advice > ul > li:not(:last-child) {
     border-bottom: 1px solid #ededed;
   }
 }
 
-.cards.\(advice\) .cards-card-body {
+.cards.advice .cards-card-body {
   margin: 0;
 }
 
-.cards.\(advice\) .cards-card-body h2 {
+.cards.advice .cards-card-body h2 {
   font-family: var(--body-font-family);
   font-size: 28px;
   font-weight: 400;
@@ -81,7 +81,7 @@
   margin-bottom: 12px;
 }
 
-.cards.\(advice\) .cards-card-body p {
+.cards.advice .cards-card-body p {
   font-size: 16px;
   color: #282b3e;
   line-height: 1.75;

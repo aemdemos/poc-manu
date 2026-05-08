@@ -35,7 +35,7 @@
 }
 
 /* Green variant */
-.columns.\(green\) {
+.columns.green {
   --columns-bg: rgb(4, 97, 56);
   --columns-text: #fff;
 
@@ -45,7 +45,7 @@
   overflow: hidden;
 }
 
-.columns.\(green\) h2 {
+.columns.green h2 {
   color: var(--columns-text);
   font-size: 48px;
   font-weight: 300;
@@ -53,30 +53,30 @@
   margin-bottom: 8px;
 }
 
-.columns.\(green\) p {
+.columns.green p {
   color: var(--columns-text);
   font-size: 16px;
   line-height: 1.75;
 }
 
-.columns.\(green\) > div > div:first-child img {
+.columns.green > div > div:first-child img {
   width: 48px;
   height: 48px;
 }
 
-.columns.\(green\) > div > .columns-img-col img {
+.columns.green > div > .columns-img-col img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 @media (width >= 900px) {
-  .columns.\(green\) > div {
+  .columns.green > div {
     align-items: stretch;
     gap: 0;
   }
 
-  .columns.\(green\) > div > div:first-child {
+  .columns.green > div > div:first-child {
     flex: 2;
     padding: 64px 64px;
     display: flex;
@@ -84,13 +84,13 @@
     justify-content: center;
   }
 
-  .columns.\(green\) > div > .columns-img-col {
+  .columns.green > div > .columns-img-col {
     flex: 1;
   }
 }
 
 /* Dark variant */
-.columns.\(dark\) {
+.columns.dark {
   --columns-bg: rgb(40 43 62);
   --columns-text: #fff;
 
@@ -99,19 +99,19 @@
   padding: 60px 0;
 }
 
-.columns.\(dark\) h2 {
+.columns.dark h2 {
   color: var(--columns-text);
   font-weight: 300;
   font-size: var(--heading-font-size-xl);
   margin-top: 0.4em;
 }
 
-.columns.\(dark\) p {
+.columns.dark p {
   color: var(--columns-text);
   line-height: 1.6;
 }
 
-.columns.\(dark\) .columns-img-col img {
+.columns.dark .columns-img-col img {
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -119,23 +119,23 @@
   display: block;
 }
 
-.columns.\(dark\) > div > div:not(.columns-img-col) img {
+.columns.dark > div > div:not(.columns-img-col) img {
   width: 48px;
   height: 48px;
 }
 
-.columns-wrapper:has(.columns.\(dark\)) {
+.columns-wrapper:has(.columns.dark) {
   max-width: 100% !important;
   padding: 0 !important;
 }
 
 @media (width >= 900px) {
-  .columns.\(dark\) {
+  .columns.dark {
     padding: 0;
     position: relative;
   }
 
-  .columns.\(dark\) > div {
+  .columns.dark > div {
     max-width: var(--max-width-site, 1200px);
     margin: 0 auto;
     padding: 0 32px;
@@ -143,7 +143,7 @@
     min-height: 500px;
   }
 
-  .columns.\(dark\) > div > div:not(.columns-img-col) {
+  .columns.dark > div > div:not(.columns-img-col) {
     flex: 1.8;
     display: flex;
     flex-direction: column;
@@ -151,7 +151,7 @@
     padding: 60px 0;
   }
 
-  .columns.\(dark\) > div > .columns-img-col {
+  .columns.dark > div > .columns-img-col {
     flex: 1;
     display: flex;
     align-items: stretch;
